@@ -28,6 +28,8 @@ app.get("/new", (req, res) => {
     res.render("./post/postMessage");
 });
 
+app.post("/new", (req, res) => {});
+
 const PORT = 3000;
 app.listen(PORT, () => {
     console.log(`Listening on port ${PORT}`);
