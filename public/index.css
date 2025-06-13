@@ -1,0 +1,49 @@
+body {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-family: "Roboto";
+    background-color: rgb(40, 43, 35);
+    color: rgb(230, 233, 229);
+}
+.messageContainer {
+    background-color: rgb(71, 68, 54);
+    padding: 2em;
+    border-radius: 2em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+.message {
+    transition: all ease-in-out 100ms;
+    border: rgb(230, 233, 229), solid 1px;
+    background-color: rgb(101, 79, 62);
+    padding: 1em;
+    border-radius: 1em;
+}
+
+.message:hover {
+    opacity: 50%;
+    transition: all ease-in-out 100ms;
+}
+
+.new {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all ease-in-out 100ms;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 0.5em;
+    background-color: rgb(151, 155, 144);
+}
+
+.new:hover {
+    transition: all ease-in-out 100ms;
+    opacity: 50%;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 0.5em;
+    background-color: rgb(151, 155, 144);
+}

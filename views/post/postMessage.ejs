@@ -3,15 +3,28 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Document</title>
+        <title>New Message</title>
+        <link rel="stylesheet" href="new.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+            rel="stylesheet"
+        />
     </head>
     <body>
         <H1>Post a new message</H1>
-        <form method="POST" action="/new">
-            <label for="name">Name</label>
-            <input id="name" />
-            <label for="message">Name</label>
-            <input id="message" />
+        <form method="POST" action="/new" class="form">
+            <div class="formContainer">
+                <label for="name">Name</label>
+                <input id="name" name="name" />
+            </div>
+            <div class="formContainer">
+                <label for="message">Message</label>
+                <input id="message" name="message" />
+            </div>
+
+            <button class="postMessage">Post message</button>
         </form>
     </body>
 </html>

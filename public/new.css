@@ -1,0 +1,55 @@
+body {
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    font-family: "Roboto";
+    background-color: rgb(40, 43, 35);
+    color: rgb(230, 233, 229);
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+}
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+input {
+    border-radius: 0.5em;
+    font-size: x-large;
+}
+button,
+input[type="submit"],
+input[type="reset"] {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+
+.postMessage {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all ease-in-out 100ms;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 0.5em;
+    background-color: rgb(151, 155, 144);
+}
+
+.postMessage:hover {
+    transition: all ease-in-out 100ms;
+    opacity: 50%;
+    margin-top: 1em;
+    padding: 1em;
+    border-radius: 0.5em;
+    background-color: rgb(151, 155, 144);
+}
