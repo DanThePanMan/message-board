@@ -15,8 +15,13 @@
     <body>
         <h1><%-title %></h1>
         <div class="messageContainer">
-            <% messages.forEach((m) => {%> <%- include('message', {message:m});
-            %> <%}); %>
+            <% if (messages && messages.length > 0) { %>
+            <% messages.forEach(m => { %>
+                <%- include('message', { message: m }) %>
+            <% }) %>
+        <% } else { %>
+            <p>No messages to display!</p>
+        <% } %>
         </div>
         <a href="/new" class="new">New Message</a>
     </body>
